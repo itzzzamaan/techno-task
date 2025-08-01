@@ -58,13 +58,13 @@ export default function SolutionCarts() {
 
        <div className="max-w-6xl mx-auto md:mt-10 mt-6 flex flex-col md:flex-row md:gap-12 gap-4 items-start">
         {/* Left Side - scrollable on mobile */}
-        <div className="space-y-0 md:space-y-6 md:max-w-[18rem] scrollbar-none w-full overflow-x-auto flex md:block md:gap-4 gap-2 pb-2 md:pb-0">
+        <div className="space-y-0 md:space-y-6 md:max-w-[16rem] scrollbar-none w-full overflow-x-auto scrollbar-hide flex md:block md:gap-4 gap-2 pb-2 md:pb-0">
           {steps.map((step) => (
             <motion.div
               key={step.id}
-              whileHover={{ scale: 1.03 }}
+              // whileHover={{ scale: 1.03 }}
               onClick={() => setActiveStep(step)}
-              className={`min-w-[130px] md:min-w-0 transition-all duration-300 rounded-2xl md:px-5 px-3 md:py-4 py-3 border cursor-pointer overflow-hidden group ${
+              className={`min-w-[130px] md:min-w-0 transition-all scrollbar-hide duration-300 hover:scale-95 rounded-2xl md:px-5 px-3 md:py-4 py-3 border cursor-pointer  group ${
                 activeStep.id === step.id ? "border-purple-600" : "border-zinc-700"
               }`}
             >

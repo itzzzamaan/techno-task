@@ -45,10 +45,10 @@ body {
 }
 
 /* Hide scrollbar for all elements */
-body, html {
+.scrollbar-hide::-webkit-scrollbar{
   scrollbar-width: none;       
   -ms-overflow-style: none;     
-  overflow-x: hidden;
+  display: none;
 }
 
 body::-webkit-scrollbar,
