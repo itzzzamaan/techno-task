@@ -35,18 +35,18 @@ const Faq = () => {
   };
 
   return (
-    <section className="bg-[#060606] py-8 px-8">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start">
+    <section className="bg-[#060606] md:py-8 py-6 px-4 md:px-8">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 md:gap-20 items-start">
         {/* Left Column */}
-        <div className="md:w-1/2 space-y-6">
-          <h2 className="text-3xl md:text-4xl font-light text-white">
+        <div className="md:w-1/2 md:space-y-6 space-y-2">
+          <h2 className="text-2xl md:text-4xl font-light text-white">
             Your AI questions, expertly{" "}
             <span className="bg-gradient-to-r to-[#B462CE] from-[#3F2AB2] text-transparent bg-clip-text font-semibold">
               answered here
             </span>
           </h2>
 
-          <button className="mt-4 px-6 py-2 rounded-full bg-gradient-to-r from-[#a855f7] to-[#6366f1] text-white font-medium text-sm">
+          <button className="md:mt-4 mt-1 px-6 py-2 rounded-full bg-gradient-to-r from-[#a855f7] to-[#6366f1] text-white font-medium text-sm">
             View All Faqs
           </button>
         </div>

@@ -25,23 +25,29 @@ export const Timeline = ({
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full bg-[#060606] font-sans md:px-10"
-      ref={containerRef}>
-      <div className="max-w-7xl mx-auto pt-10 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg font-light md:text-5xl mb-4 text-white max-w-4xl">
+   <div className="relative w-full bg-[#060606] md:pb-0 pb-4 px-0 md:px-4" ref={containerRef}>
+  {/* Background image absolutely positioned */}
+  <img
+    src="/bgPattern.png"
+    alt="Background Pattern"
+    className="absolute inset-0 opacity-40 md:pr-10 w-full h-full object-cover z-0"
+  />
+  
+
+      <div className="max-w-7xl relative text-center md:text-start mx-auto pt-10 px-2 md:px-8 lg:px-10">
+        <h2 className="text-2xl font-light md:text-5xl md:mb-4 mb-2 text-white max-w-4xl">
           The Convoze {" "}
-          <span className="bg-gradient-to-r from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
+          <span className="bg-gradient-to-r  from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-bold md:font-semibold">
               Journey
             </span>
         </h2>
         <p
-          className="text-neutral-300 text-sm md:text-base ">
-          Those who have been working on Convoze for the past 4 years. Here&apos;s
+          className="text-neutral-300 text-lg md:text-xl ">
+          Those who have been working on Convoze for the past 4 years. <br className="md:hidden block"/> Here&apos;s
           a timeline of there journey.
         </p>
       </div>
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto pb-6 md:pb-20">
         {data.map((item, index) => (
           <div key={index} className="flex justify-start pt-10 md:pt-20 md:gap-10">
             <div
@@ -52,17 +58,19 @@ export const Timeline = ({
                   className="h-4 w-4 rounded-full bg-neutral-200  border border-neutral-300  p-2" />
               </div>
               <h3
-                className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500  ">
+                className="hidden md:block md:pl-20 md:text-5xl font-bold text-neutral-500  ">
                 {item.title}
               </h3>
             </div>
 
-            <div className="relative pl-20 pr-4 md:pl-4 w-full">
+            <div className="relative pl-14 pr-4 md:pl-4 w-full">
               <h3
-                className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-300 ">
+                className="md:hidden block text-xl mb-1 mt-1 pl-1 text-left font-bold text-neutral-300 ">
                 {item.title}
               </h3>
-              {item.content}{" "}
+              <h3 className="md:text-base text-sm mb-1 text-left font-normal text-neutral-300 ">
+                {item.content}{" "}
+              </h3>
             </div>
           </div>
         ))}

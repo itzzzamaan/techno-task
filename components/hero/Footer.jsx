@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-light mb-2">
               Let’s work{" "}
-              <span className="font-semibold bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text">
+              <span className="font-semibold bg-gradient-to-r from-[#C068D1] to-[#3224AF] text-transparent bg-clip-text">
                 together!
               </span>
             </h2>
@@ -17,7 +17,7 @@ const Footer = () => {
               Partner with us to create intelligent, impactful, and future-ready AI solutions together.
             </p>
           </div>
-          <button className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-medium px-6 py-2 rounded-full shadow-md hover:scale-105 transition">
+          <button className="bg-gradient-to-r from-[#C068D1] cursor-pointer to-[#3224AF] text-white text-sm font-medium px-5 py-2.5 rounded-full shadow-md hover:scale-105 transition">
             Let’s Work Together
           </button>
         </div>

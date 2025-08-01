@@ -48,9 +48,9 @@ const Hero = () => {
         />
 
         {/* Text Content */}
-        <div className="absolute z-20 text-center md:mt-0 mt-10 md:max-w-4xl px-6 md:px-4">
-          <h1 className="text-xl md:text-[40px] md:px-0 px-4 font-normal text-white leading-tight">
-            97% of customer support
+        <div className="absolute z-20 text-center md:mt-0 mt-4 md:max-w-4xl px-2 md:px-4">
+          <h1 className="text-lg md:text-[40px] md:px-0 px-4 font-normal text-white leading-tight">
+            97% of customer support {" "}
             <br className="hidden md:block" />
             conversations go unheard. <br className="hidden md:block" /> Only 3%
             get reviewed.
@@ -62,8 +62,8 @@ const Hero = () => {
             cutting review time & driving smarter decisions in real time.
           </p>
 
-          <div className="md:mt-8 mt-4 md:text-base text-sm flex flex-row justify-center items-center gap-2 md:gap-4">
-            <button className="bg-black cursor-pointer text-white border border-white md:px-4 px-3 md:py-3 py-2 rounded-full font-normal hover:bg-white hover:text-black transition-all duration-300">
+          <div className="md:mt-8 mt-4 font-light md:text-base text-xs flex flex-row justify-center items-center gap-2 md:gap-4">
+            <button className="bg-black cursor-pointer text-white border border-purple-500 md:px-4 px-3 md:py-3 py-2 rounded-full font-normal hover:bg-white hover:text-black transition-all duration-300">
               Book a Demo
             </button>
             <button className="bg-gradient-to-r from-[#C068D1] to-[#3224AF]  cursor-pointer text-white md:px-4 px-3 md:py-3 py-2 rounded-full font-normal hover:opacity-90 transition-all duration-300">

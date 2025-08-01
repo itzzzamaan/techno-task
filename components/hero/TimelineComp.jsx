@@ -7,7 +7,7 @@ export function Timelinecomp() {
       title: "2022",
       content: (
         <div>
-          <h1 className="mb-4 text-2xl md:text-3xl pb-1 bg-gradient-to-r from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
+          <h1 className="mb-4 text-xl md:text-3xl pb-1 bg-gradient-to-r from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
             Manual Quality Auditing Systems
           </h1>
           <div className="bg-zinc-900 border border-zinc-700 rounded-xl shadow-lg p-6 md:p-8 space-y-4">
@@ -26,7 +26,7 @@ export function Timelinecomp() {
       title: "2023",
       content: (
         <div>
-          <h1 className="mb-4 text-2xl md:text-3xl pb-1 bg-gradient-to-r  from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
+          <h1 className="mb-4 text-xl md:text-3xl pb-1 bg-gradient-to-r  from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
             Quality Management System
           </h1>
           <div className="bg-zinc-900 border border-zinc-700 rounded-xl shadow-lg p-6 md:p-8 space-y-4">
@@ -57,13 +57,11 @@ export function Timelinecomp() {
       title: "2024",
       content: (
         <div>
-          <h1 className="mb-4 text-2xl md:text-3xl pb-1 bg-gradient-to-r from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
+          <h1 className="mb-4 text-xl md:text-3xl pb-1 bg-gradient-to-r from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
             Convoze Speech Analytics
           </h1>
           <div className="bg-zinc-900 border border-zinc-700 rounded-xl shadow-lg p-6 md:p-8 space-y-4">
-            <h3 className="text-xl font-bold text-white">
-              Convoze 2.0 Highlights
-            </h3>
+          
             <ul className="list-disc text-white list-inside space-y-2">
               <li>
                 Introduced the capabilities of real-time transcription and
@@ -88,7 +86,7 @@ export function Timelinecomp() {
       title: "2025",
       content: (
         <div>
-          <h1 className="mb-4 text-2xl md:text-3xl pb-1 bg-gradient-to-r from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
+          <h1 className="mb-4 text-xl md:text-3xl pb-1 bg-gradient-to-r from-[#9333ea] to-[#6366f1] text-transparent bg-clip-text font-semibold">
             Convoze Conversational Analytics
           </h1>
           <div className="bg-zinc-900 border border-zinc-700 rounded-xl shadow-lg p-6 md:p-8 space-y-4">

@@ -9,9 +9,9 @@ const Pricing = () => {
       name: 'Starter',
       price: 29,
       period: 'month',
-      description: 'Perfect for small teams and startups getting started',
+      description: 'Perfect for small teams and for startups',
       icon: <Star className="w-6 h-6" />,
-      color: 'from-blue-400 to-cyan-500',
+      color: 'bg-gradient-to-r from-[#C068D1] to-[#3224AF] cursor-pointer',
       popular: false,
       features: [
         { name: 'Up to 5 team members', included: true },
@@ -32,9 +32,9 @@ const Pricing = () => {
       name: 'Growth',
       price: 79,
       period: 'month',
-      description: 'Ideal for growing businesses that need more power',
+      description: 'Ideal for growing businesses need more power',
       icon: <Zap className="w-6 h-6" />,
-      color: 'from-purple-400 to-pink-500',
+      color: 'bg-gradient-to-r from-[#C068D1] to-[#3224AF] cursor-pointer',
       popular: true,
       features: [
         { name: 'Up to 25 team members', included: true },
@@ -57,7 +57,7 @@ const Pricing = () => {
       period: 'month',
       description: 'For large organizations with advanced needs',
       icon: <Crown className="w-6 h-6" />,
-      color: 'from-amber-400 to-orange-500',
+      color: 'bg-gradient-to-r from-[#C068D1] to-[#3224AF] cursor-pointer',
       popular: false,
       features: [
         { name: 'Unlimited team members', included: true },
@@ -112,7 +112,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-white py-16 px-4">
+    <div className="min-h-screen bg-[#060606] text-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -121,13 +121,13 @@ const Pricing = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-5xl font-semibold mb-4">
+            <span className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] cursor-pointer bg-clip-text text-transparent">
               Transparent Pricing
             </span>
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Choose the perfect plan for your team. No hidden fees, no surprises. 
+          <p className="text-lg font-normal text-gray-300 max-w-2xl mx-auto">
+            Choose the perfect plan for your team. No hidden fees, no surprises. <br className='md:block hidden'/>
             Scale up or down as your business grows.
           </p>
         </motion.div>
@@ -144,9 +144,9 @@ const Pricing = () => {
               key={plan.name}
               variants={cardVariants}
               whileHover={{ scale: 1.05, rotateY: 5 }}
-              className={`relative bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 ${
-                plan.popular ? 'ring-2 ring-purple-400 shadow-2xl shadow-purple-500/25' : ''
-              }`}
+              className={`relative bg-white/10 backdrop-blur-lg rounded-2xl p-7 border border-white/20 
+                 hover:ring-2 hover:ring-purple-400 hover:shadow-2xl hover:shadow-purple-500/25
+              `}
             >
               {plan.popular && (
                 <motion.div
@@ -155,7 +155,7 @@ const Pricing = () => {
                   transition={{ delay: 0.5, type: "spring" }}
                   className="absolute -top-4 left-1/2 transform -translate-x-1/2"
                 >
-                  <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  <span className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] cursor-pointer text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                     Most Popular
                   </span>
                 </motion.div>
@@ -177,11 +177,8 @@ const Pricing = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
-                    plan.popular
-                      ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg hover:shadow-xl'
-                      : 'bg-white/10 text-white border border-white/20 hover:bg-white/20'
-                  }`}
+                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 
+                      bg-white/10 border border-white/20 hover:bg-gradient-to-r hover:from-[#C068D1] hover:to-[#3224AF] cursor-pointer text-white shadow-lg hover:shadow-xl`}
                 >
                   Get Started
                 </motion.button>
@@ -197,8 +194,8 @@ const Pricing = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10"
         >
-          <h2 className="text-3xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-semibold text-center mb-8">
+            <span className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] cursor-pointer bg-clip-text text-transparent">
               Feature Comparison
             </span>
           </h2>
@@ -247,7 +244,7 @@ const Pricing = () => {
         </motion.div>
 
         {/* CTA Section */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -262,11 +259,11 @@ const Pricing = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-400 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] cursor-pointer text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Contact Sales
           </motion.button>
-        </motion.div> */}
+        </motion.div>
       </div>
     </div>
   );

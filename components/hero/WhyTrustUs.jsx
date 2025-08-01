@@ -33,9 +33,9 @@ const trustData = [
 
 export default function WhyTrustUs() {
   return (
-    <section className="bg-[#060606] md:py-14 text-white px-4 pb-6">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-light">
+    <section className="bg-[#060606] md:-mt-0 -mt-16 md:pb-10 text-white px-4 pb-6">
+      <div className="max-w-6xl mx-auto text-center mb-6 md:mb-12">
+        <h2 className="text-2xl md:text-4xl font-light">
           Engineered for {" "}
           <span className="font-semibold bg-gradient-to-r to-[#B462CE] from-[#3F2AB2] text-transparent bg-clip-text">
             Impact
@@ -44,7 +44,7 @@ export default function WhyTrustUs() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-6 gap-4 max-w-6xl mx-auto">
         {trustData.map((item, idx) => (
           <div
             key={idx}

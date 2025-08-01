@@ -23,18 +23,18 @@ const features = [
 
 const FeaturesCart = () => {
   return (
-    <section className="w-full bg-[#060606] text-white px-4 pt-4">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-2xl md:text-4xl font-medium mb-4 text-transparent bg-clip-text bg-gradient-to-r to-[#B462CE] from-[#3F2AB2]">
+    <section className="w-full bg-[#060606] text-white md:px-4 px-3 md:pt-4">
+      <div className="md:max-w-6xl max-w-7xl mx-auto text-center mb-6 md:mb-12">
+        <h2 className="text-2xl md:text-4xl font-medium md:mb-4 mb-2 text-transparent bg-clip-text bg-gradient-to-r to-[#B462CE] from-[#3F2AB2]">
           What is  <span className=" font-normal text-white">{" "}Convoze?</span>
         </h2>
-        <p className="text-gray-300 font-light text-lg md:text-xl max-w-3xl mx-auto mb-6">
-          Your AI Assistant for Every Customer Conversation
+        <p className="text-gray-300 font-light text-base md:text-xl max-w-3xl mx-auto mb-3 md:mb-6">
+          Your AI Assistant for <br className="md:hidden block"/> Every Customer Conversation
         </p>
-        <p className="text-gray-400 font-light text-sm md:text-base max-w-6xl mx-auto">
+        <p className="text-gray-400 font-light text-sm md:text-base md:max-w-6xl max-w-7xl mx-auto">
           Convoze is an AI-powered voice intelligence platform that helps you monitor,
           understand, and act on every one of your customers' calls — instantly and at scale.
-          It’s not just another QA tool. It’s your real-time co-pilot for quality, compliance, and performance.
+          It’s not just another QA tool. It’s your real-time co-pilot for quality, compliance & performance.
         </p>
       </div>
 
@@ -44,9 +44,9 @@ const FeaturesCart = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="max-w-6xl mx-auto w-full mb-12 px-4"
+        className="max-w-6xl mx-auto w-full md:mb-12 mb-8 px-0 md:px-4"
       >
-        <div className="w-full h-[52vh] scroll-smooth rounded-xl overflow-hidden shadow-lg border border-gray-800">
+        <div className="w-full md:h-[52vh] h-[36vh] scroll-smooth rounded-xl overflow-hidden shadow-lg border border-gray-800">
           <iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
             title="Convoze Product Demo"
@@ -59,7 +59,7 @@ const FeaturesCart = () => {
       </motion.div>
 
       {/* Features Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-6 gap-4 px-0 md:px-4">
         {features.map((item, idx) => (
           <motion.div
             key={idx}

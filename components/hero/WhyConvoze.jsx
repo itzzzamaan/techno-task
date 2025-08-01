@@ -94,9 +94,18 @@ const WhyConvoze = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#060606] text-white overflow-hidden">
+   <div className="min-h-screen relative bg-[#060606] text-white overflow-hidden">
+
+  {/* Background Image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="/bgPattern.png"
+      alt="Background Pattern"
+      className="w-full h-full object-cover opacity-20"
+    />
+  </div>
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      {/* <div className="absolute inset-0 opacity-10">
         <div
           className="absolute inset-0"
           style={{
@@ -104,12 +113,14 @@ const WhyConvoze = () => {
                            radial-gradient(circle at 75% 75%, rgba(236, 72, 153, 0.3) 0%, transparent 50%)`,
           }}
         ></div>
-      </div>
+      </div> */}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 lg:pt-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 pt-6 lg:pt-8">
+
+   
         {/* Header Section */}
         <div
-          className={`text-center mb-10 transition-all duration-1000 ${
+          className={`text-center md:mb-10 mb-6 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -133,7 +144,7 @@ const WhyConvoze = () => {
               return (
                 <div
                   key={index}
-                  className={`relative p-6 lg:p-8 rounded-2xl transition-all duration-700 cursor-pointer
+                  className={`relative p-6 lg:p-8 backdrop-blur-xs backdrop:opacity-20 rounded-2xl transition-all duration-700 cursor-pointer
                     ${
                       isActive
                         ? "bg-gradient-to-br from-purple-900/40 to-indigo-900/60 scale-105 shadow-xl"
@@ -171,8 +182,8 @@ const WhyConvoze = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="text-center mb-10">
-            <h2 className="text-3xl lg:text-4xl font-light text-white mb-4">
+          <div className="text-center mb-6 md:mb-10">
+            <h2 className="text-2xl lg:text-4xl font-light text-white mb-4">
               This isn't just inefficient — it's expensive
             </h2>
           </div>
@@ -197,7 +208,7 @@ const WhyConvoze = () => {
                   onMouseLeave={() => setHoveredProblem(null)}
                 >
                   <div
-                    className={`p-6 lg:p-7 rounded-2xl transition-all duration-500 border border-gray-800/50 
+                    className={`p-6 lg:p-7 rounded-2xl transition-all bg-[#232731]/70 backdrop-blur-xs backdrop:opacity-20 duration-500 border border-gray-800/50 
                     ${
                       isHovered
                         ? "scale-105 shadow-xl from-purple-900/30 to-indigo-900/40"
@@ -229,8 +240,8 @@ const WhyConvoze = () => {
               );
             })}
           </div>
-          <div className="w-full text-center mt-6 px-4">
-            <p className="text-lg md:text-xl font-light leading-relaxed text-white">
+          <div className="w-full text-center mt-6 md:px-4">
+            <p className="text-base md:text-xl font-light leading-relaxed text-white">
               You’re spending on conversations, but not learning from them.
               
               That’s where Convoze steps in.

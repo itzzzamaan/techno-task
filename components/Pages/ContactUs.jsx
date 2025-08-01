@@ -8,9 +8,9 @@ import {
 
 const ContactUs = () => {
   return (
-    <div className="bg-[#0A0A0A] text-white max-w-7xl px-4 md:px-16 py-10 space-y-10">
-     <h1 className='text-3xl md:text-4xl font-bold text-center text-white'> Have Enquiry {" "}
-       <span className='bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text'>Contact Us</span>
+    <div className="bg-[#060606] text-white max-w-7xl mx-auto px-4 md:px-16 py-10 space-y-10">
+     <h1 className='text-3xl md:text-4xl  font-bold text-center text-white'>
+       <span className='bg-gradient-to-r from-[#C068D1] to-[#3224AF] text-transparent bg-clip-text'>Contact Us</span>
      </h1>
       {/* Top Section: Form + Map */}
       <div className="grid md:grid-cols-2 gap-8 bg-[#0a0a0a]  rounded-3xl">
@@ -24,7 +24,7 @@ const ContactUs = () => {
             <input type="email" placeholder="Email Address" className="bg-black border border-gray-700 px-4 py-3 rounded-lg" />
           </div>
           <textarea rows="4" placeholder="Write Message..." className="w-full bg-black border border-gray-700 px-4 py-3 rounded-lg resize-none"></textarea>
-          <button className="bg-gradient-to-r from-purple-500 to-blue-500 py-2 px-4 cursor-pointer rounded-full text-white font-semibold hover:opacity-90 transition-all">
+          <button className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] py-2 px-4 cursor-pointer rounded-full text-white font-semibold hover:opacity-90 transition-all">
             Submit Now
           </button>
         </div>
@@ -45,8 +45,8 @@ const ContactUs = () => {
       {/* Bottom Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
         {/* Contact Us */}
-        <div className="bg-gradient-to-br from-[#0c0c2d] to-[#1b012a] rounded-2xl p-6 border border-[#2a2a2a]">
-          <div className="bg-gradient-to-r from-purple-500 to-blue-500 w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
+        <div className="bg-[#0A0A0A] rounded-2xl p-6 border border-[#2a2a2a]">
+          <div className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
             <Phone className="text-white w-6 h-6" />
           </div>
           <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
@@ -54,8 +54,8 @@ const ContactUs = () => {
         </div>
 
         {/* Email Us */}
-        <div className="bg-gradient-to-br from-[#0c0c2d] to-[#1b012a] rounded-2xl p-6 border border-[#2a2a2a]">
-          <div className="bg-gradient-to-r from-purple-500 to-blue-500 w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
+        <div className="bg-[#0A0A0A] rounded-2xl p-6 border border-[#2a2a2a]">
+          <div className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
             <Mail className="text-white w-6 h-6" />
           </div>
           <h3 className="text-lg font-semibold mb-2">Email Us</h3>
@@ -63,8 +63,8 @@ const ContactUs = () => {
         </div>
 
         {/* Working Hours */}
-        <div className="bg-gradient-to-br from-[#0c0c2d] to-[#1b012a] rounded-2xl p-6 border border-[#2a2a2a]">
-          <div className="bg-gradient-to-r from-purple-500 to-blue-500 w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
+        <div className="bg-[#0A0A0A] rounded-2xl p-6 border border-[#2a2a2a]">
+          <div className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
             <Clock className="text-white w-6 h-6" />
           </div>
           <h3 className="text-lg font-semibold mb-2">Working Hours</h3>
@@ -72,8 +72,8 @@ const ContactUs = () => {
         </div>
 
         {/* Location */}
-        <div className="bg-gradient-to-br from-[#0c0c2d] to-[#1b012a] rounded-2xl p-6 border border-[#2a2a2a]">
-          <div className="bg-gradient-to-r from-purple-500 to-blue-500 w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
+        <div className="bg-[#0A0A0A] rounded-2xl p-6 border border-[#2a2a2a]">
+          <div className="bg-gradient-to-r from-[#C068D1] to-[#3224AF] w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full text-xl">
             <MapPin className="text-white w-6 h-6" />
           </div>
           <h3 className="text-lg font-semibold mb-2">Location</h3>

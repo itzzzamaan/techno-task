@@ -43,3 +43,15 @@
 body {
   font-family: var(--font-sora), sans-serif;
 }
+
+/* Hide scrollbar for all elements */
+body, html {
+  scrollbar-width: none;       
+  -ms-overflow-style: none;     
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+}
